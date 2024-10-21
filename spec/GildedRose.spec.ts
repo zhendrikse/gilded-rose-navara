@@ -20,11 +20,27 @@ describe('Gilded Rose', () => {
 
   it('updates a foo item', () => {
     const items = [
-      new Item("Aged Brie", 0, 0),
       new Item("Foo", 0, 0),
-      new Item("Foo", 0, 2),
+      new Item("Foo", 0, 10),
+      new Item("Foo", -1, 0),
+      new Item("Foo", -10, 2),
+      new Item("Foo", -10, 51),
+      new Item("Sulfuras, Hand of Ragnaros", -1, 1),
+      new Item("Sulfuras, Hand of Ragnaros", 0, 10),
+      new Item("Aged Brie", -1, 0),
+      new Item("Aged Brie", 0, 50),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 1, 0),
       new Item("Backstage passes to a TAFKAL80ETC concert", 0, 0),
-      new Item("Sulfuras, Hand of Ragnaros", 0, 0)
+      new Item("Backstage passes to a TAFKAL80ETC concert", 11, 48),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 11, 49),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 10, 48),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 10, 49),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 10, 50),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 5, 47),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 5, 48),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 5, 49),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 6, 47),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 0, 50)
     ];
     const gildedRose = new GildedRose(items);
     const updated_items = gildedRose.updateQuality();
