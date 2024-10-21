@@ -20,7 +20,11 @@ describe('Gilded Rose', () => {
 
   it('updates a foo item', () => {
     const items = [
-      new Item("Foo", 0, 0)
+      new Item("Aged Brie", 0, 0),
+      new Item("Foo", 0, 0),
+      new Item("Foo", 0, 2),
+      new Item("Backstage passes to a TAFKAL80ETC concert", 0, 0),
+      new Item("Sulfuras, Hand of Ragnaros", 0, 0)
     ];
     const gildedRose = new GildedRose(items);
     const updated_items = gildedRose.updateQuality();
